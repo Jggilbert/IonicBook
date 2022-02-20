@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-title>
+      Cover Page
+    </ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        <ion-card-header>
+          <ion-card-title>My Ionic Book</ion-card-title>
+        </ion-card-header>
+          <ion-list  *ngFor="let home of homes">
+            <ion-item [routerDirection]="'root'" [routerLink]="['/home']">
+              {{home.title}}
+            </ion-item>
+          </ion-list>
+</ion-content>
